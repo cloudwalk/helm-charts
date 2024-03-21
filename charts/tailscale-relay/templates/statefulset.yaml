@@ -42,9 +42,9 @@ spec:
               value: kube:{{ .Values.rbac.stateSecretName }}
           envFrom:
             - configMapRef:
-                name: {{ template "app.fullname" . }}-config
+                name: {{ template "app.fullname" . }}
             - secretRef:
-                name: {{ template "app.fullname" . }}-config
+                name: {{ template "app.fullname" . }}
           ports:
             - name: exporter
               containerPort: 8080

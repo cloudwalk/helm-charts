@@ -1,6 +1,10 @@
 ---
 replicas: 1
 
+externalSecrets:
+  enabled: true
+  key:
+
 image:
   repository: docker.io/mvisonneau/tailscale
   pullPolicy: IfNotPresent
