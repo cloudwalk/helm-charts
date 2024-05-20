@@ -6,10 +6,9 @@ externalSecrets:
   key:
 
 image:
-  repository: docker.io/mvisonneau/tailscale
   pullPolicy: IfNotPresent
-  # tag: <default to chart app version>
-
+  repository: docker.io/mvisonneau/tailscale
+  tag: v1.62.0
 # Use hostNetwork for the pod
 hostNetwork: false
 
